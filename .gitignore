@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CapMobileWebApp/CapMobileWebApp/bin/Debug/net6.0
+/CapMobileWebApp/CapMobileWebApp/obj
+/CapMobileWebApp/.vs/CapMobileWebApp
