@@ -1,32 +1,41 @@
-﻿using CapMobileWebApp.Models;
-using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
+using CapMobileWebApp.Models;
+using Microsoft.AspNetCore.Identity;
+using CapMobileWebApp.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CapMobileWebApp.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly SignInManager<UserContext> _us;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, SignInManager<UserContext> us)
         {
             _logger = logger;
+            _us = us;
         }
+
 
         public IActionResult Index()
+
         {
+
             return View();
         }
 
-        public IActionResult Privacy()
+        public async Task<IActionResult> Logout()
+
         {
-            return View();
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+            return RedirectToAction("Login", "Access");
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }
