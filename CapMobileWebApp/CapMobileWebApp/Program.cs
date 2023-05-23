@@ -1,20 +1,25 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using CapMobileWebApp.Models;
 using CapMobileWebApp.Data;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 
+
+
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(option => {
-        option.LoginPath = "/Access/Login";
-        option.ExpireTimeSpan = TimeSpan.FromMinutes(20);    
-    });
-//builder.Services.AddDbContext<UserContext>(options =>
-//options.UseSqlServer(builder.Configuration.GetConnectionString("dbcon")));
+    .AddCookie();
+builder.Services.AddDbContext<UserContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("dbcon")));
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<UserContext>().AddDefaultTokenProviders();
+builder.Services.ConfigureApplicationCookie(option => option.LoginPath ="/Access/Login");
+
+
+
 
 var app = builder.Build();
 
@@ -37,9 +42,11 @@ app.MapDefaultControllerRoute();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Access}/{action=Login}/{id?}");
+    pattern: "{controller=Access}/{action=Login}");
 
 app.Run();
+
+
 
 
 

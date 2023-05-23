@@ -10,8 +10,8 @@ namespace CapMobileWebApp.Models
 {
     public class LoginModel
     {
-        [Key]
 
+        [System.ComponentModel.DataAnnotations.Key]
         public int UserId { get; set; }
 
         [Required(ErrorMessage = "Invalid User")]

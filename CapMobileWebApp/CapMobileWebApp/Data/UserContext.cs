@@ -1,8 +1,7 @@
 ﻿using System;
 using CapMobileWebApp.Models;
-using Microsoft.AspNetCore.Identity;
+
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;    
 
 namespace CapMobileWebApp.Data
 {
@@ -13,10 +12,10 @@ namespace CapMobileWebApp.Data
 
         }
 
-        public UserContext(DbContextOptions<UserContext> options): base(options)
+        public UserContext(DbContextOptions<UserContext> options) : base(options)
         {
         }
-        public  DbSet<LoginModel> UserInfo { get; set; }
+       //public  DbSet<LoginModel> UserInfo { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
