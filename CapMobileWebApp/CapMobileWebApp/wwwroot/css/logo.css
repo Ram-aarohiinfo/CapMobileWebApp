@@ -1,0 +1,212 @@
+﻿.body-wrap {
+    background-color: #7d2ae8;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 2px;
+    padding-right: 114px;
+    overflow: hidden;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    padding-left: 200px;
+    padding-top: 200px;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+
+.logo-image {
+    width: 400px;
+    height: 400px;
+    padding-right: 361px;
+}
+
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    background: white;
+    border-radius: 15px;
+}
+
+    .center h1 {
+        text-align: center;
+        padding: 0 0 200px 0;
+        border-bottom: 1px solid rgb(77, 70, 71);
+    }
+
+    .center form {
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+
+form .text_field {
+    position: relative;
+    border-bottom: 2px solid #665c5c;
+    margin: 30px 0;
+}
+
+.fas fa-eye {
+    float: right;
+    margin: 5px;
+}
+
+
+
+.text_field input {
+    width: 100%;
+    padding: 20px 20px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding-right: 100px;
+}
+
+.text_field label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #adadad;
+    transform: translate(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    padding-bottom: 100px;
+}
+
+.text_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2681d8;
+    transition: .5s;
+}
+
+
+.text_field input:focus ~ label,
+.text_field input:valid ~ label {
+    top: -5px;
+    color: #2681d8;
+}
+
+.text_field input:focus ~ span::before,
+.text_field input:valid:valid ~ span::before {
+    width: 100%;
+}
+
+.pass {
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+
+    .pass:hover {
+        text-decoration: underline;
+    }
+
+input[type="submit"] {
+    width: 100%;
+    height: 81px;
+    border: 1px solid black;
+    background: #2681d8;
+    border-radius: 25px;
+    font-size: 29px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+    input[type="submit"]:hover {
+        border-color: #2681d8;
+        transition: .5s;
+    }
+
+.da-b {
+    padding-bottom: 300px;
+}
+
+.sa-b {
+    padding-bottom: 300px;
+}
+
+.da-ta {
+    position: relative;
+}
+
+#btnTogglePassword {
+    position: absolute;
+    right: 21px;
+    font-size: 20px;
+    width: 30px;
+    height: 28px;
+    margin-top: -42px;
+}
+
+#btnToggleKey {
+    position: absolute;
+    right: 34px;
+    font-size: 26px;
+    width: 4px;
+    height: 0px;
+    margin-top: -50px;
+}
+
+.ra-b {
+    padding-bottom: 50px;
+    width: 100%;
+    font-size: 28px;
+}
+
+.password-container {
+    width: 100%;
+    position: relative;
+    margin-bottom: -29px;
+    padding-bottom: 50px;
+    font-size: 28px;
+}
+
+    .password-container input[type="password"],
+    .password-container input[type="text"] {
+        width: 100%;
+        padding-bottom: 12px;
+        box-sizing: border-box;
+        padding-bottom: 50px;
+        font-size: 32px;
+    }
+
+.fa-eye {
+    position: absolute;
+    top: 28%;
+    right: 2%;
+    cursor: pointer;
+    color: lightgray;
+}
+
+.text-pad {
+    padding-bottom: 20px;
+}
+
+.bt {
+    width: 100%;
+}
+
+#btnLogin {
+    width: 100%;
+}
+
+#form1 {
+    width: 80%;
+    margin: auto;
+}
