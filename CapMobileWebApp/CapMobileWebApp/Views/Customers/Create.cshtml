@@ -1,0 +1,209 @@
+﻿@model CapMobileWebApp.DAL.Model.Customer
+
+@{
+    ViewData["Title"] = "Create";
+}
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- left column -->
+                    <div class="col-md-9">
+                        <!-- general form elements -->
+                        <div class="card card-primary">
+                            <div class="card-header">
+                                <h3 class="card-title">Loan Application</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <!-- form start -->
+                            <form asp-action="Create">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label asp-for="CustomerName" class="control-label"></label>
+                                        <input asp-for="CustomerName" class="form-control" />
+                                        <span asp-validation-for="CustomerName" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="ApplicantFather" class="control-label"></label>
+                                        <input asp-for="ApplicantFather" class="form-control" />
+                                        <span asp-validation-for="ApplicantFather" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="BirthDate" class="control-label"></label>
+                                        <input asp-for="BirthDate" class="form-control" />
+                                        <span asp-validation-for="BirthDate" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="Age" class="control-label"></label>
+                                        <input asp-for="Age" class="form-control" />
+                                        <span asp-validation-for="Age" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="Gender" class="control-label"></label>
+                                        <input asp-for="Gender" class="form-control" />
+                                        <span asp-validation-for="Gender" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="MobileNo" class="control-label"></label>
+                                        <input asp-for="MobileNo" class="form-control" />
+                                        <span asp-validation-for="MobileNo" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="EmailId" class="control-label"></label>
+                                        <input asp-for="EmailId" class="form-control" />
+                                        <span asp-validation-for="EmailId" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="CustomerAadharAddress" class="control-label"></label>
+                                        <input asp-for="CustomerAadharAddress" class="form-control" />
+                                        <span asp-validation-for="CustomerAadharAddress" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="CustomerCurrentAddress" class="control-label"></label>
+                                        <input asp-for="CustomerCurrentAddress" class="form-control" />
+                                        <span asp-validation-for="CustomerCurrentAddress" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="ResAddress" class="control-label"></label>
+                                        <input asp-for="ResAddress" class="form-control" />
+                                        <span asp-validation-for="ResAddress" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="Pincode" class="control-label"></label>
+                                        <input asp-for="Pincode" class="form-control" />
+                                        <span asp-validation-for="Pincode" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="Mstate" class="control-label"></label>
+                                        <input asp-for="Mstate" class="form-control" />
+                                        <span asp-validation-for="Mstate" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="CustomerDistrict" class="control-label"></label>
+                                        <input asp-for="CustomerDistrict" class="form-control" />
+                                        <span asp-validation-for="CustomerDistrict" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="CustomerTaluka" class="control-label"></label>
+                                        <input asp-for="CustomerTaluka" class="form-control" />
+                                        <span asp-validation-for="CustomerTaluka" class="text-danger"></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label asp-for="City" class="control-label"></label>
+                                        <input asp-for="City" class="form-control" />
+                                        <span asp-validation-for="City" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="CustomerVillage" class="control-label"></label>
+                                        <input asp-for="CustomerVillage" class="form-control" />
+                                        <span asp-validation-for="CustomerVillage" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="CustomerLat" class="control-label"></label>
+                                        <input asp-for="CustomerLat" class="form-control" />
+                                        <span asp-validation-for="CustomerLat" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="CustomerLong" class="control-label"></label>
+                                        <input asp-for="CustomerLong" class="form-control" />
+                                        <span asp-validation-for="CustomerLong" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="CustomerLoanApplicationDate" class="control-label"></label>
+                                        <input asp-for="CustomerLoanApplicationDate" class="form-control" />
+                                        <span asp-validation-for="CustomerLoanApplicationDate" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="NomineePanCard" class="control-label"></label>
+                                        <input asp-for="NomineePanCard" class="form-control" />
+                                        <span asp-validation-for="NomineePanCard" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="Uidno" class="control-label"></label>
+                                        <input asp-for="Uidno" class="form-control" />
+                                        <span asp-validation-for="Uidno" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="CustomerDrivingLicNo" class="control-label"></label>
+                                        <input asp-for="CustomerDrivingLicNo" class="form-control" />
+                                        <span asp-validation-for="CustomerDrivingLicNo" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="CustomerEducation" class="control-label"></label>
+                                        <input asp-for="CustomerEducation" class="form-control" />
+                                        <span asp-validation-for="CustomerEducation" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="CustomerCategory" class="control-label"></label>
+                                        <select asp-for="CustomerCategory" class="form-control">
+                                            <option>Salary</option>
+                                            <option>Business</option>
+                                        </select>
+                                        <input asp-for="CustomerCategory" class="form-control" />
+                                        <span asp-validation-for="CustomerCategory" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label asp-for="CustomerLoanType" class="control-label"></label>
+                                        <select asp-for="CustomerLoanType" class="form-control">
+                                            <option>Personal Loan</option>
+                                            <option>Home Loan</option>
+                                            <option>Educational Loan</option>
+                                            <option>2 Wheeler Loan</option>
+                                            <option>4 Wheeler Loan</option>
+                                        </select>
+                                        <span asp-validation-for="CustomerLoanType" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+
+                                <div class="form-group">
+                                    <input type="submit" value="Create" class="btn btn-primary" />
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </section>
+
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

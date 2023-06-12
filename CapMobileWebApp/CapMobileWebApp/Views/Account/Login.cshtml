@@ -1,18 +1,21 @@
-﻿@{
+﻿@model LoginViewModel
+@{
     ViewData["Title"] = "Home Page";
     Layout = "_Login_Layout";
 }
 
+
 <div class="login-logo">
-    <a href="../../index2.html"><b>Admin</b>LTE</a>
+    <a href="../../index2.html"><b>Aarohiinfo</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-      <p class="login-box-msg">Sign in to start your session</p>
+      <p class="login-box-msg">Sign in</p>
       <form asp-action="Login" method="post">
         <div class="input-group mb-3">
-          <input type="email" required class="form-control" placeholder="Email">
+          <input type="text" name="Email" required class="form-control" placeholder="Email">
+          @Html.ValidationMessageFor(x => x.Email)
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -20,7 +23,8 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" required class="form-control" placeholder="Password">
+          <input type="password" name="Password" required class="form-control" placeholder="Password">
+          @Html.ValidationMessageFor(x => x.Password)
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -28,13 +32,14 @@
           </div>
         </div>
          <div class="input-group mb-3">
-          <input type="password" required class="form-control" placeholder="Key">
+          <input type="text" name="Key" required class="form-control" placeholder="Key">
+          @Html.ValidationMessageFor(x => x.Key)
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
             </div>
           </div>
-        </div>
+        </div> 
         <div class="row">
           <div class="col-8">
            @* <div class="icheck-primary">

@@ -1,0 +1,617 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "CapRetailContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": null,
+   "OutputContextPath": "DAL\/Context",
+   "OutputPath": "DAL\/Model",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "CapMobileWebApp",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[Area]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AreaTransferredToTE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Asset]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AssignBranch]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AssignSurvey]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Branch]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[BranchTarget]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Branding]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CashFlow]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CashFlowBusiness]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CashFlowSalary]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CGroup]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ChangeOfficerLog]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[companySetup]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CreditBureauInfo]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[creditpointreport]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Customer]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CustomerDetails]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CustomerTransfer]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Day]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Disbursement]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[EMIInstallments]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FaceTagging]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GLInstallmentOtp]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GroupMember]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GroupTrainingProcess]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ImportwithAccount]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LoanAccount]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LoanApplicant]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LoanApplication]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LoanTransaction]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LoanType]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Log]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LogTransaction]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[MBB]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[MBBAttendance]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[MeetingParticipants]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[MemberLimit]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Process]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Question]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Role]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SavingAccount]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SavingTransaction]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SecurityAnswers]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SecurityQuestions]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[sms]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SubmittedCollectionAmount]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Survey]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SurveyInfo]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SurveyInformation]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TrainingAnswers]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TrainingQuestions]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TrainingReport]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TrainingTest]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[UserInfo]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[UserTarget]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[addacc]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ApproveTransaction]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[AssignAreaToTE]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[AssignBEtoFO]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Changeportfolio]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[DataCorrectionPartial]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[DataCorrectionSpecialCase]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ExportTrainingReport]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[FebCollFix]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[getAssignedAreas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GetDashboardGraph]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GetDelayedProcess]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GetManagerDashBoardData]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GetManagerDashBoardDataTestJv]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[getPotential]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[getrecordsemp1]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[MoveCustomerToBlc]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ODinterestCorrection]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SaveCreditBureauInfo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SD_AddBranch]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SD_Delete]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SD_Insert]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SD_Select]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SD_Update]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SelectRole]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_getPendencyReport]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_GetTrainingTest]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_VE_SyncDataByVE]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spI_AddQuestions]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spI_Application]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spI_Branding]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spI_Branding2]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spI_CashFlow]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spI_Center]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spI_DeleteAllMeetingParticipantsofMeeting]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spI_FaceTagging]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spI_GetODReport]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spI_Group]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spI_GroupTrainingProcess]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spI_GroupTrainingProcess2]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spI_LoanTransaction]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spI_MeetingParticipants]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spI_Survey]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spI_syncDataByBE]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spI_TrainingAnswers]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spI_TrainingReport]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spIU_MBB]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spIU_MBBAttendance]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spl_getContactInfoFromCGroup]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spl_InsertAnswer]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spl_InsertOTPtoCGROUP]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spl_ResetCGT]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spl_VE_getMobileNo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spS_EMICalculationDataByUser]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spS_FS_EMICalculationDataByUser]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spS_FS_FaceTagging]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spS_FS_SyncDataByFS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spS_SurveyStatus]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spS_SyncDataByUser]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spS_ValidateLogin]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spU_FS_VerifyApplication]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spU_FS_VerifyCenter]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spU_FS_VerifyGroup]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spU_FS_VerifySurvey]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spU_Questions]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[totalemi]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[updatesurvey]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[VerifyAcc]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[VerifyAccount]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[calcgtdays]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[Countprocessindays]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[DateMonthDiff]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[fnBelow100]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[fnBelow20]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[getbalance]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[getCountOfCustomerForPerformance]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[getdates]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[getdatesforPendingApparaisal]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[getgroupleader]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[getlasttransacdate]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[getlasttransacdetails]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[getoutint]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[getoutinterest]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[getoverdueAmount]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[getoverdueAmountTestJv]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[getoverduedays]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[getoverdueintpri]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[NumberToWords]",
+         "ObjectType": 2
+      },
+      {
+         "Name": "[dbo].[Split]",
+         "ObjectType": 2
+      }
+   ],
+   "UiHint": "win-8p33vp8oelu.CapRetail.dbo",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false,
+   "UseT4": false
+}
